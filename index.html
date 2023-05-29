@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | ONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="main_container">
+        <div class="input_section">
+            <div class="text-area_container">
+                <div class="text-area_imgContainer">
+                    <img src="./assets/img/logo-alura.png" alt="">
+                </div>
+                <div class="text-area_inputContainer">
+                    <textarea class="text-area_input" placeholder="Ingrese el texto aqui" name="" id="text-area_input-id" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="btn-area_container">
+               <div class="advice-container">
+                    <div class="advice-container_subcontainer">
+                        <img src="./assets/img/Vector.png" alt="">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+               </div>
+               <div class="btn-container">
+                    <button class="btn" id="btn-encriptar">Encriptar</button>
+                    <button class="btn" id="btn-desencriptar">Desencriptar</button>
+               </div>
+            </div>
+        </div>
+        <div class="output_section">
+            <div class="message-notfound">
+                <div class="output-img">
+                    <img src="./assets/img/Muñeco.png" alt="">
+                </div>
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees <br> encriptar o desencriptar.</p>
+            </div>
+            <div class="result-container">
+                <div class="text-results_container">
+                    <p class="text-results">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, porro numquam voluptatem dignissimos nulla natus tempora amet? Rerum inventore veritatis, sed magni accusamus dolor alias molestiae! Quasi accusantium labore odit.
+                    </p>
+                </div>
+                <button class="btn" id="btn-copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

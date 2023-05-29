@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background: #F3F5FC;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+}
+.input_section{
+    width: 100%;
+}
+.text-area_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.text-area_imgContainer{
+    margin: 24px 0 0 16px;
+}
+.text-area_inputContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    min-height: 300px;
+}
+.text-area_input{
+    width: 95%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 32px;
+    color: #0A3871;
+}
+.text-area_input::placeholder{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+}
+.btn-area_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+.advice-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advice-container_subcontainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width:343px ;
+}
+.advice-container_subcontainer img{
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+}
+.advice-container_subcontainer p{
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+
+}
+.btn{
+    height: 67px;
+    width: 90%;
+    max-width: 340px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: 0;
+    margin: 5px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn-encriptar{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+#btn-desencriptar{
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    border: solid #0A3871 1px;
+    color: #0A3871;
+}
+.output_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.message-notfound{
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 90%;
+    max-width: 327px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+}
+.message-notfound h2{
+    color: #343A40;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight:700;
+    margin-bottom: 10px;
+}
+.message-notfound p{
+    color: #343A40;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+
+}
+#btn-copiar{
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    border: solid #0A3871 1px;
+    color: #0A3871;   
+}
+.output-img{
+    display: none;
+}
+.result-container{
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 90%;
+    max-width: 327px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.text-results{
+    text-align: justify;
+    padding: 15px;
+    font-size: 24px;
+}
+.text-results_container{
+    height: 80%;
+}
+@media (min-width: 768px) {
+    .btn-container{
+        flex-direction: row;
+    }
+    .message-notfound{
+        max-width: 688px;
+        height: 133px;
+        display: flex;
+    }
+    .result-container{
+        max-width: 688px;
+        display: none;
+    }
+    .text-results{
+        padding: 25px;
+    }
+    #btn-copiar{
+        max-width: 688px;
+    }
+    .advice-container{
+        
+        max-width:688px ;
+    }
+}
+@media (min-width: 1240px) {
+    .main_container{
+        height: 100vh;
+    }
+    .output_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+    }
+    .input_section{
+        width: 50%;
+        height: 100%;
+    }
+    .main_container{
+        display: flex;
+        flex-direction: row;
+    }
+    .message-notfound{
+        height: 100%;
+        display: flex;
+    }
+    .output-img{
+        display: block;
+    }
+    .result-container{
+       height: 100%;
+       display: none;
+    }
+    .btn-area_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 40%;
+    }
+}
